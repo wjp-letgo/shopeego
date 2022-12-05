@@ -5,12 +5,12 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/wjpxxx/letgo/encry"
-	"github.com/wjpxxx/letgo/httpclient"
-	"github.com/wjpxxx/letgo/lib"
-	"github.com/wjpxxx/shopeego/commonentity"
-	logisticsEntity "github.com/wjpxxx/shopeego/logistics/entity"
-	firstmileentity "github.com/wjpxxx/shopeego/firstmile/entity"
+	"github.com/wjp-letgo/letgo/encry"
+	"github.com/wjp-letgo/letgo/httpclient"
+	"github.com/wjp-letgo/letgo/lib"
+	"github.com/wjp-letgo/shopeego/commonentity"
+	firstmileentity "github.com/wjp-letgo/shopeego/firstmile/entity"
+	logisticsEntity "github.com/wjp-letgo/shopeego/logistics/entity"
 )
 
 //Config
@@ -45,7 +45,7 @@ func (c *Config) GetCommonParam(method string) string {
 		"partner_id": c.PartnerID,
 		"timestamp":  ti,
 	}
-	if c.shopInfo != nil&&method!="public/get_refresh_token_by_upgrade_code" {
+	if c.shopInfo != nil && method != "public/get_refresh_token_by_upgrade_code" {
 		param["access_token"] = c.shopInfo.AccessToken
 		if strings.Index(method, "merchant") != -1 {
 			param["merchant_id"] = c.shopInfo.ShopID
@@ -106,7 +106,7 @@ func (c *Config) Http(requestMethod, method string, data interface{}, out interf
 			rs := out.(*logisticsEntity.DownloadShippingDocumentResult)
 			rs.File = result.BodyByte
 		}
-	}else if method == "first_mile/get_waybill" {
+	} else if method == "first_mile/get_waybill" {
 		s := lib.StringToObject(result.Body(), out)
 		if !s {
 			rs := out.(*firstmileentity.GetWaybillResult)

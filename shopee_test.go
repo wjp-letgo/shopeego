@@ -3,14 +3,14 @@ package shopeego
 import (
 	"testing"
 
-	"github.com/wjpxxx/shopeego/commonentity"
-	shopeeConfig "github.com/wjpxxx/shopeego/config"
-	firstmileentity "github.com/wjpxxx/shopeego/firstmile/entity"
+	"github.com/wjp-letgo/shopeego/commonentity"
+	shopeeConfig "github.com/wjp-letgo/shopeego/config"
+	firstmileentity "github.com/wjp-letgo/shopeego/firstmile/entity"
 
-	//"github.com/wjpxxx/shopeego/order"
-	//orderEntity "github.com/wjpxxx/shopeego/order/entity"
-	//"github.com/wjpxxx/letgo/file"
-	//"github.com/wjpxxx/letgo/lib"
+	//"github.com/wjp-letgo/shopeego/order"
+	//orderEntity "github.com/wjp-letgo/shopeego/order/entity"
+	//"github.com/wjp-letgo/letgo/file"
+	//"github.com/wjp-letgo/letgo/lib"
 	"fmt"
 )
 

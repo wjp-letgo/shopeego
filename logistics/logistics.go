@@ -3,9 +3,9 @@ package logistics
 import (
 	"strings"
 
-	"github.com/wjpxxx/letgo/lib"
-	shopeeConfig "github.com/wjpxxx/shopeego/config"
-	"github.com/wjpxxx/shopeego/logistics/entity"
+	"github.com/wjp-letgo/letgo/lib"
+	shopeeConfig "github.com/wjp-letgo/shopeego/config"
+	"github.com/wjp-letgo/shopeego/logistics/entity"
 )
 
 //常量

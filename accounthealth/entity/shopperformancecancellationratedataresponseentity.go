@@ -1,14 +1,15 @@
 package entity
 
 import (
-    "github.com/wjpxxx/letgo/lib"
+	"github.com/wjp-letgo/letgo/lib"
 )
 
-type ShopPerformanceCancellationRateDataResponseEntity struct{
-    Target	string	`json:"target"`
-    MyShopPerformance	string	`json:"my_shop_performance"`
-    PenaltyPoints	string	`json:"penalty_points"`
+type ShopPerformanceCancellationRateDataResponseEntity struct {
+	Target            string `json:"target"`
+	MyShopPerformance string `json:"my_shop_performance"`
+	PenaltyPoints     string `json:"penalty_points"`
 }
+
 func (g ShopPerformanceCancellationRateDataResponseEntity) String() string {
-    return lib.ObjectToString(g)
+	return lib.ObjectToString(g)
 }

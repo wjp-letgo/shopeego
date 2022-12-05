@@ -1,9 +1,9 @@
 package public
 
 import (
-	"github.com/wjpxxx/letgo/lib"
-	shopeeConfig "github.com/wjpxxx/shopeego/config"
-	publicentity "github.com/wjpxxx/shopeego/public/entity"
+	"github.com/wjp-letgo/letgo/lib"
+	shopeeConfig "github.com/wjp-letgo/shopeego/config"
+	publicentity "github.com/wjp-letgo/shopeego/public/entity"
 )
 
 //Public

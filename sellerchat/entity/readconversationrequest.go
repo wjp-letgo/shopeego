@@ -1,13 +1,14 @@
 package entity
 
 import (
-    "github.com/wjpxxx/letgo/lib"
+	"github.com/wjp-letgo/letgo/lib"
 )
 
-type ReadConversationRequest struct{
-    ConversationId	int64	`json:"conversation_id"`
-    LastReadMessageId	string	`json:"last_read_message_id"`
+type ReadConversationRequest struct {
+	ConversationId    int64  `json:"conversation_id"`
+	LastReadMessageId string `json:"last_read_message_id"`
 }
+
 func (g ReadConversationRequest) String() string {
-    return lib.ObjectToString(g)
+	return lib.ObjectToString(g)
 }

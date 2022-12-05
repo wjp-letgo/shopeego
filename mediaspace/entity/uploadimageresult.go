@@ -1,15 +1,15 @@
 package entity
 
 import (
-	"github.com/wjpxxx/letgo/lib"
-	"github.com/wjpxxx/shopeego/commonentity"
+	"github.com/wjp-letgo/letgo/lib"
+	"github.com/wjp-letgo/shopeego/commonentity"
 )
 
 //UploadImageResult
 type UploadImageResult struct {
 	commonentity.Result
-	Error   string `json:"error"`
-	Warning string `json:"warning"`
+	Error    string   `json:"error"`
+	Warning  string   `json:"warning"`
 	Response Response `json:"response"`
 }
 
@@ -17,8 +17,9 @@ type UploadImageResult struct {
 func (g UploadImageResult) String() string {
 	return lib.ObjectToString(g)
 }
+
 //Response
-type Response struct{
+type Response struct {
 	ImageInfo ImageInfo `json:"image_info"`
 }
 
@@ -28,8 +29,8 @@ func (g Response) String() string {
 }
 
 //ImageInfo
-type ImageInfo struct{
-	ImageId string `json:"image_id"`
+type ImageInfo struct {
+	ImageId      string         `json:"image_id"`
 	ImageUrlList []ImageUrlList `json:"image_url_list"`
 }
 
@@ -38,9 +39,9 @@ func (g ImageInfo) String() string {
 	return lib.ObjectToString(g)
 }
 
-type ImageUrlList struct{
+type ImageUrlList struct {
 	ImageUrlRegion string `json:"image_url_region"`
-	ImageUrl string `json:"image_url"`
+	ImageUrl       string `json:"image_url"`
 }
 
 //String

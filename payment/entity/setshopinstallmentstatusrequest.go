@@ -1,12 +1,13 @@
 package entity
 
 import (
-    "github.com/wjpxxx/letgo/lib"
+	"github.com/wjp-letgo/letgo/lib"
 )
 
-type SetShopInstallmentStatusRequest struct{
-    InstallmentStatus	int	`json:"installment_status"`
+type SetShopInstallmentStatusRequest struct {
+	InstallmentStatus int `json:"installment_status"`
 }
+
 func (g SetShopInstallmentStatusRequest) String() string {
-    return lib.ObjectToString(g)
+	return lib.ObjectToString(g)
 }

@@ -1,15 +1,16 @@
 package entity
 
 import (
-    "github.com/wjpxxx/letgo/lib"
+	"github.com/wjp-letgo/letgo/lib"
 )
 
-type GetAddOnDealMainItemResult struct{
-    Error	string	`json:"error"`
-    Message	string	`json:"message"`
-    RequestId	string	`json:"request_id"`
-    Response	GetAddOnDealMainItemResponseResponseEntity	`json:"response"`
+type GetAddOnDealMainItemResult struct {
+	Error     string                                     `json:"error"`
+	Message   string                                     `json:"message"`
+	RequestId string                                     `json:"request_id"`
+	Response  GetAddOnDealMainItemResponseResponseEntity `json:"response"`
 }
+
 func (g GetAddOnDealMainItemResult) String() string {
-    return lib.ObjectToString(g)
+	return lib.ObjectToString(g)
 }

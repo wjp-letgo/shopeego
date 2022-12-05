@@ -1,23 +1,23 @@
 package entity
 
 import (
-    "github.com/wjpxxx/letgo/lib"
+	"github.com/wjp-letgo/letgo/lib"
 )
 
-type UnreadConversationResult struct{
-    Error	string	`json:"error"`
-    Message	string	`json:"message"`
-    RequestId	string	`json:"request_id"`
-    Response	UnreadConversationResponseResponseEntity	`json:"response"`
+type UnreadConversationResult struct {
+	Error     string                                   `json:"error"`
+	Message   string                                   `json:"message"`
+	RequestId string                                   `json:"request_id"`
+	Response  UnreadConversationResponseResponseEntity `json:"response"`
 }
+
 func (g UnreadConversationResult) String() string {
-    return lib.ObjectToString(g)
+	return lib.ObjectToString(g)
 }
 
-type UnreadConversationResponseResponseEntity struct{
-
+type UnreadConversationResponseResponseEntity struct {
 }
 
 func (g UnreadConversationResponseResponseEntity) String() string {
-    return lib.ObjectToString(g)
+	return lib.ObjectToString(g)
 }

@@ -1,12 +1,13 @@
 package entity
 
 import (
-    "github.com/wjpxxx/letgo/lib"
+	"github.com/wjp-letgo/letgo/lib"
 )
 
-type DisputeResponseResponseEntity struct{
-    ReturnSn	string	`json:"return_sn"`
+type DisputeResponseResponseEntity struct {
+	ReturnSn string `json:"return_sn"`
 }
+
 func (g DisputeResponseResponseEntity) String() string {
-    return lib.ObjectToString(g)
+	return lib.ObjectToString(g)
 }

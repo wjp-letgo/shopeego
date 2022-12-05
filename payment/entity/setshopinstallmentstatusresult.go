@@ -1,15 +1,16 @@
 package entity
 
 import (
-    "github.com/wjpxxx/letgo/lib"
+	"github.com/wjp-letgo/letgo/lib"
 )
 
-type SetShopInstallmentStatusResult struct{
-    RequestId	string	`json:"request_id"`
-    Error	string	`json:"error"`
-    Message	string	`json:"message"`
-    Response	SetShopInstallmentStatusResponseResponseEntity	`json:"response"`
+type SetShopInstallmentStatusResult struct {
+	RequestId string                                         `json:"request_id"`
+	Error     string                                         `json:"error"`
+	Message   string                                         `json:"message"`
+	Response  SetShopInstallmentStatusResponseResponseEntity `json:"response"`
 }
+
 func (g SetShopInstallmentStatusResult) String() string {
-    return lib.ObjectToString(g)
+	return lib.ObjectToString(g)
 }

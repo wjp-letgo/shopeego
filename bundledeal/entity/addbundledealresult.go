@@ -1,15 +1,16 @@
 package entity
 
 import (
-    "github.com/wjpxxx/letgo/lib"
+	"github.com/wjp-letgo/letgo/lib"
 )
 
-type AddBundleDealResult struct{
-    Error	string	`json:"error"`
-    Message	string	`json:"message"`
-    RequestId	string	`json:"request_id"`
-    Response	AddBundleDealResponseResponseEntity	`json:"response"`
+type AddBundleDealResult struct {
+	Error     string                              `json:"error"`
+	Message   string                              `json:"message"`
+	RequestId string                              `json:"request_id"`
+	Response  AddBundleDealResponseResponseEntity `json:"response"`
 }
+
 func (g AddBundleDealResult) String() string {
-    return lib.ObjectToString(g)
+	return lib.ObjectToString(g)
 }

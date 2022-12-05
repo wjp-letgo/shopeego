@@ -1,12 +1,13 @@
 package entity
 
 import (
-    "github.com/wjpxxx/letgo/lib"
+	"github.com/wjp-letgo/letgo/lib"
 )
 
-type ShopPerformanceCustomerSatisfactionResponseEntity struct{
-    OverallReviewingRate	ShopPerformanceOverallReviewingRateResponseEntity	`json:"overall_reviewing_rate"`
+type ShopPerformanceCustomerSatisfactionResponseEntity struct {
+	OverallReviewingRate ShopPerformanceOverallReviewingRateResponseEntity `json:"overall_reviewing_rate"`
 }
+
 func (g ShopPerformanceCustomerSatisfactionResponseEntity) String() string {
-    return lib.ObjectToString(g)
+	return lib.ObjectToString(g)
 }

@@ -1,13 +1,14 @@
 package entity
 
 import (
-    "github.com/wjpxxx/letgo/lib"
+	"github.com/wjp-letgo/letgo/lib"
 )
 
-type GetPayoutDetailResponseResponseEntity struct{
-    More	bool	`json:"more"`
-    PayoutList	[]GetPayoutDetailPayoutListResponseEntity	`json:"payout_list"`
+type GetPayoutDetailResponseResponseEntity struct {
+	More       bool                                      `json:"more"`
+	PayoutList []GetPayoutDetailPayoutListResponseEntity `json:"payout_list"`
 }
+
 func (g GetPayoutDetailResponseResponseEntity) String() string {
-    return lib.ObjectToString(g)
+	return lib.ObjectToString(g)
 }

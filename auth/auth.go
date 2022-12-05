@@ -3,11 +3,11 @@ package auth
 import (
 	"fmt"
 
-	"github.com/wjpxxx/letgo/lib"
-	"github.com/wjpxxx/letgo/httpclient"
-	"github.com/wjpxxx/shopeego/auth/entity"
-	"github.com/wjpxxx/shopeego/commonentity"
-	shopeeConfig "github.com/wjpxxx/shopeego/config"
+	"github.com/wjp-letgo/letgo/httpclient"
+	"github.com/wjp-letgo/letgo/lib"
+	"github.com/wjp-letgo/shopeego/auth/entity"
+	"github.com/wjp-letgo/shopeego/commonentity"
+	shopeeConfig "github.com/wjp-letgo/shopeego/config"
 )
 
 //Auth

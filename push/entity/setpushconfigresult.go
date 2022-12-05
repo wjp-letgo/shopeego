@@ -1,15 +1,16 @@
 package entity
 
 import (
-    "github.com/wjpxxx/letgo/lib"
+	"github.com/wjp-letgo/letgo/lib"
 )
 
-type SetPushConfigResult struct{
-    Status	string	`json:"status"`
-    RequestId	string	`json:"request_id"`
-    Error	string	`json:"error"`
-    Message	string	`json:"message"`
+type SetPushConfigResult struct {
+	Status    string `json:"status"`
+	RequestId string `json:"request_id"`
+	Error     string `json:"error"`
+	Message   string `json:"message"`
 }
+
 func (g SetPushConfigResult) String() string {
-    return lib.ObjectToString(g)
+	return lib.ObjectToString(g)
 }

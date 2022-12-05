@@ -1,12 +1,13 @@
 package entity
 
 import (
-    "github.com/wjpxxx/letgo/lib"
+	"github.com/wjp-letgo/letgo/lib"
 )
 
-type DeleteDiscountRequest struct{
-    DiscountId	int64	`json:"discount_id"`
+type DeleteDiscountRequest struct {
+	DiscountId int64 `json:"discount_id"`
 }
+
 func (g DeleteDiscountRequest) String() string {
-    return lib.ObjectToString(g)
+	return lib.ObjectToString(g)
 }

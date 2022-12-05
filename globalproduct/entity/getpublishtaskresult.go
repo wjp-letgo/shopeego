@@ -1,8 +1,8 @@
 package entity
 
 import (
-	"github.com/wjpxxx/letgo/lib"
-	"github.com/wjpxxx/shopeego/commonentity"
+	"github.com/wjp-letgo/letgo/lib"
+	"github.com/wjp-letgo/shopeego/commonentity"
 )
 
 //GetPublishTaskResult

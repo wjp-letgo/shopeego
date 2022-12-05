@@ -1,12 +1,13 @@
 package entity
 
 import (
-    "github.com/wjpxxx/letgo/lib"
+	"github.com/wjp-letgo/letgo/lib"
 )
 
-type SendMessageContentResponseEntity struct{
-    Text	string	`json:"text"`
+type SendMessageContentResponseEntity struct {
+	Text string `json:"text"`
 }
+
 func (g SendMessageContentResponseEntity) String() string {
-    return lib.ObjectToString(g)
+	return lib.ObjectToString(g)
 }

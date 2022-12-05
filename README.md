@@ -17,14 +17,14 @@ To install shopeego package, you need to install Go and set your Go workspace fi
 1. The first need [Go](https://golang.org/) installed (**version 1.12+ is required**), then you can use the below Go command to install shopeego.
 
 ```sh
-$ go get -u github.com/wjpxxx/shopeego
+$ go get -u github.com/wjp-letgo/shopeego
 ```
 
 2. Import it in your code:
 
 ```go
 import (
-	"github.com/wjpxxx/shopeego"
+	"github.com/wjp-letgo/shopeego"
 )
 ```
 ## Quick start
@@ -35,14 +35,14 @@ import (
 package main
 
 import (
-	"github.com/wjpxxx/shopeego"
-	"github.com/wjpxxx/shopeego/commonentity"
-	shopeeConfig "github.com/wjpxxx/shopeego/config"
+	"github.com/wjp-letgo/shopeego"
+	"github.com/wjp-letgo/shopeego/commonentity"
+	shopeeConfig "github.com/wjp-letgo/shopeego/config"
 
-	//"github.com/wjpxxx/shopeego/order"
-	//orderEntity "github.com/wjpxxx/shopeego/order/entity"
-	//"github.com/wjpxxx/letgo/file"
-	//"github.com/wjpxxx/letgo/lib"
+	//"github.com/wjp-letgo/shopeego/order"
+	//orderEntity "github.com/wjp-letgo/shopeego/order/entity"
+	//"github.com/wjp-letgo/letgo/file"
+	//"github.com/wjp-letgo/letgo/lib"
 	"fmt"
 )
 

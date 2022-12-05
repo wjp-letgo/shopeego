@@ -1,12 +1,13 @@
 package entity
 
 import (
-    "github.com/wjpxxx/letgo/lib"
+	"github.com/wjp-letgo/letgo/lib"
 )
 
-type GetWaybillRequest struct{
-    FirstMileTrackingNumberList	[]string	`json:"first_mile_tracking_number_list"`
+type GetWaybillRequest struct {
+	FirstMileTrackingNumberList []string `json:"first_mile_tracking_number_list"`
 }
+
 func (g GetWaybillRequest) String() string {
-    return lib.ObjectToString(g)
+	return lib.ObjectToString(g)
 }

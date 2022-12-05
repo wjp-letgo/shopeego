@@ -1,12 +1,13 @@
 package entity
 
 import (
-    "github.com/wjpxxx/letgo/lib"
+	"github.com/wjp-letgo/letgo/lib"
 )
 
-type GetItemInstallmentStatusRequest struct{
-    ItemIdList	[]int64	`json:"item_id_list"`
+type GetItemInstallmentStatusRequest struct {
+	ItemIdList []int64 `json:"item_id_list"`
 }
+
 func (g GetItemInstallmentStatusRequest) String() string {
-    return lib.ObjectToString(g)
+	return lib.ObjectToString(g)
 }

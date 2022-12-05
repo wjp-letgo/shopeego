@@ -1,12 +1,13 @@
 package entity
 
 import (
-    "github.com/wjpxxx/letgo/lib"
+	"github.com/wjp-letgo/letgo/lib"
 )
 
-type DeleteConversationRequest struct{
-    ConversationId	int64	`json:"conversation_id"`
+type DeleteConversationRequest struct {
+	ConversationId int64 `json:"conversation_id"`
 }
+
 func (g DeleteConversationRequest) String() string {
-    return lib.ObjectToString(g)
+	return lib.ObjectToString(g)
 }

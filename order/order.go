@@ -1,10 +1,10 @@
 package order
 
 import (
+	"github.com/wjp-letgo/letgo/lib"
+	shopeeConfig "github.com/wjp-letgo/shopeego/config"
+	"github.com/wjp-letgo/shopeego/order/entity"
 	"strings"
-	"github.com/wjpxxx/letgo/lib"
-	shopeeConfig "github.com/wjpxxx/shopeego/config"
-	"github.com/wjpxxx/shopeego/order/entity"
 )
 
 const (
@@ -57,17 +57,17 @@ func (o *Order) GetOrderList(
 	responseOptionalFields string) entity.GetOrderListResult {
 	method := "order/get_order_list"
 	params := lib.InRow{
-		"time_range_field":         timeRangeField,
-		"time_from":                timeFrom,
-		"time_to":                  timeTo,
-		"page_size":                pageSize,
-		"cursor":                   cursor,
+		"time_range_field": timeRangeField,
+		"time_from":        timeFrom,
+		"time_to":          timeTo,
+		"page_size":        pageSize,
+		"cursor":           cursor,
 	}
-	if orderStatus!=""{
-		params["order_status"]=orderStatus
+	if orderStatus != "" {
+		params["order_status"] = orderStatus
 	}
-	if responseOptionalFields!=""{
-		params["response_optional_fields"]=responseOptionalFields
+	if responseOptionalFields != "" {
+		params["response_optional_fields"] = responseOptionalFields
 	}
 	result := entity.GetOrderListResult{}
 	err := o.Config.HttpGet(method, params, &result)

@@ -1,12 +1,13 @@
 package entity
 
 import (
-    "github.com/wjpxxx/letgo/lib"
+	"github.com/wjp-letgo/letgo/lib"
 )
 
-type BindFirstMileTrackingNumberWarningResponseEntity struct{
-    OrderSn	string	`json:"order_sn"`
+type BindFirstMileTrackingNumberWarningResponseEntity struct {
+	OrderSn string `json:"order_sn"`
 }
+
 func (g BindFirstMileTrackingNumberWarningResponseEntity) String() string {
-    return lib.ObjectToString(g)
+	return lib.ObjectToString(g)
 }

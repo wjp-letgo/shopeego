@@ -1,14 +1,15 @@
 package entity
 
 import (
-    "github.com/wjpxxx/letgo/lib"
+	"github.com/wjp-letgo/letgo/lib"
 )
 
-type GetPayoutDetailEscrowListResponseEntity struct{
-    EscrowAmount	float32	`json:"escrow_amount"`
-    Currency	string	`json:"currency"`
-    OrderSn	string	`json:"order_sn"`
+type GetPayoutDetailEscrowListResponseEntity struct {
+	EscrowAmount float32 `json:"escrow_amount"`
+	Currency     string  `json:"currency"`
+	OrderSn      string  `json:"order_sn"`
 }
+
 func (g GetPayoutDetailEscrowListResponseEntity) String() string {
-    return lib.ObjectToString(g)
+	return lib.ObjectToString(g)
 }

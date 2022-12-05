@@ -1,12 +1,13 @@
 package entity
 
 import (
-    "github.com/wjpxxx/letgo/lib"
+	"github.com/wjp-letgo/letgo/lib"
 )
 
-type GetFollowPrizeDetailRequest struct{
-    CampaignId	int64	`json:"campaign_id"`
+type GetFollowPrizeDetailRequest struct {
+	CampaignId int64 `json:"campaign_id"`
 }
+
 func (g GetFollowPrizeDetailRequest) String() string {
-    return lib.ObjectToString(g)
+	return lib.ObjectToString(g)
 }

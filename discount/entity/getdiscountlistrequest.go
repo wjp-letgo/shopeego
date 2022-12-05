@@ -1,14 +1,15 @@
 package entity
 
 import (
-    "github.com/wjpxxx/letgo/lib"
+	"github.com/wjp-letgo/letgo/lib"
 )
 
-type GetDiscountListRequest struct{
-    DiscountStatus	string	`json:"discount_status"`
-    PageNo	int	`json:"page_no"`
-    PageSize	int	`json:"page_size"`
+type GetDiscountListRequest struct {
+	DiscountStatus string `json:"discount_status"`
+	PageNo         int    `json:"page_no"`
+	PageSize       int    `json:"page_size"`
 }
+
 func (g GetDiscountListRequest) String() string {
-    return lib.ObjectToString(g)
+	return lib.ObjectToString(g)
 }

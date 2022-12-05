@@ -1,9 +1,9 @@
 package globalproduct
 
 import (
-	"github.com/wjpxxx/letgo/lib"
-	shopeeConfig "github.com/wjpxxx/shopeego/config"
-	globalentity "github.com/wjpxxx/shopeego/globalproduct/entity"
+	"github.com/wjp-letgo/letgo/lib"
+	shopeeConfig "github.com/wjp-letgo/shopeego/config"
+	globalentity "github.com/wjp-letgo/shopeego/globalproduct/entity"
 )
 
 const (

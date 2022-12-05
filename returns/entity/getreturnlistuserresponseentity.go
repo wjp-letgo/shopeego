@@ -1,14 +1,15 @@
 package entity
 
 import (
-    "github.com/wjpxxx/letgo/lib"
+	"github.com/wjp-letgo/letgo/lib"
 )
 
-type GetReturnListUserResponseEntity struct{
-    Username	string	`json:"username"`
-    Email	string	`json:"email"`
-    Portrait	string	`json:"portrait"`
+type GetReturnListUserResponseEntity struct {
+	Username string `json:"username"`
+	Email    string `json:"email"`
+	Portrait string `json:"portrait"`
 }
+
 func (g GetReturnListUserResponseEntity) String() string {
-    return lib.ObjectToString(g)
+	return lib.ObjectToString(g)
 }

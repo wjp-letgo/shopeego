@@ -1,13 +1,14 @@
 package entity
 
 import (
-    "github.com/wjpxxx/letgo/lib"
+	"github.com/wjp-letgo/letgo/lib"
 )
 
-type GetWalletTransactionListPayOrderListResponseEntity struct{
-    OrderSn	string	`json:"order_sn"`
-    ShopName	string	`json:"shop_name"`
+type GetWalletTransactionListPayOrderListResponseEntity struct {
+	OrderSn  string `json:"order_sn"`
+	ShopName string `json:"shop_name"`
 }
+
 func (g GetWalletTransactionListPayOrderListResponseEntity) String() string {
-    return lib.ObjectToString(g)
+	return lib.ObjectToString(g)
 }

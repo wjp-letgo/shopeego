@@ -1,12 +1,13 @@
 package entity
 
 import (
-    "github.com/wjpxxx/letgo/lib"
+	"github.com/wjp-letgo/letgo/lib"
 )
 
-type ConfirmRequest struct{
-    ReturnSn	string	`json:"return_sn"`
+type ConfirmRequest struct {
+	ReturnSn string `json:"return_sn"`
 }
+
 func (g ConfirmRequest) String() string {
-    return lib.ObjectToString(g)
+	return lib.ObjectToString(g)
 }

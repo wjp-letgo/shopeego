@@ -1,21 +1,22 @@
 package entity
 
 import (
-    "github.com/wjpxxx/letgo/lib"
+	"github.com/wjp-letgo/letgo/lib"
 )
 
-type UpdateBundleDealRequest struct{
-    RuleType	int	`json:"rule_type"`
-    DiscountValue	float32	`json:"discount_value"`
-    FixPrice	float32	`json:"fix_price"`
-    DiscountPercentage	int	`json:"discount_percentage"`
-    MinAmount	int	`json:"min_amount"`
-    StartTime	int	`json:"start_time"`
-    EndTime	int	`json:"end_time"`
-    Name	string	`json:"name"`
-    PurchaseLimit	int	`json:"purchase_limit"`
-    BundleDealId	int64	`json:"bundle_deal_id"`
+type UpdateBundleDealRequest struct {
+	RuleType           int     `json:"rule_type"`
+	DiscountValue      float32 `json:"discount_value"`
+	FixPrice           float32 `json:"fix_price"`
+	DiscountPercentage int     `json:"discount_percentage"`
+	MinAmount          int     `json:"min_amount"`
+	StartTime          int     `json:"start_time"`
+	EndTime            int     `json:"end_time"`
+	Name               string  `json:"name"`
+	PurchaseLimit      int     `json:"purchase_limit"`
+	BundleDealId       int64   `json:"bundle_deal_id"`
 }
+
 func (g UpdateBundleDealRequest) String() string {
-    return lib.ObjectToString(g)
+	return lib.ObjectToString(g)
 }

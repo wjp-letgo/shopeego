@@ -3,9 +3,9 @@ package product
 import (
 	"strings"
 
-	"github.com/wjpxxx/letgo/lib"
-	shopeeConfig "github.com/wjpxxx/shopeego/config"
-	"github.com/wjpxxx/shopeego/product/entity"
+	"github.com/wjp-letgo/letgo/lib"
+	shopeeConfig "github.com/wjp-letgo/shopeego/config"
+	"github.com/wjp-letgo/shopeego/product/entity"
 )
 
 const (
@@ -48,14 +48,14 @@ type Product struct {
 func (p *Product) GetComment(itemID, commentID int64, cursor int, pageSize int) entity.GetCommentResult {
 	method := "product/get_comment"
 	params := lib.InRow{
-		"cursor":     cursor,
-		"page_size":  pageSize,
+		"cursor":    cursor,
+		"page_size": pageSize,
 	}
-	if itemID>0{
-		params["item_id"]=itemID
+	if itemID > 0 {
+		params["item_id"] = itemID
 	}
-	if commentID>0{
-		params["comment_id"]=commentID
+	if commentID > 0 {
+		params["comment_id"] = commentID
 	}
 	result := entity.GetCommentResult{}
 	err := p.Config.HttpGet(method, params, &result)
@@ -71,7 +71,7 @@ func (p *Product) GetComment(itemID, commentID int64, cursor int, pageSize int) 
 func (p *Product) ReplyComment(commentList []entity.ReplyCommentRequestCommentEntity) entity.ReplyCommentResult {
 	method := "product/reply_comment"
 	params := lib.InRow{
-		"comment_list":commentList,
+		"comment_list": commentList,
 	}
 	result := entity.ReplyCommentResult{}
 	err := p.Config.HttpPost(method, params, &result)
@@ -520,7 +520,7 @@ func (p *Product) UpdateSipItemPrice(itemID int64, sipItemPrice []entity.SipItem
 //SearchItem
 //@Title Use this call to search item.
 //@Description https://open.shopee.com/documents?module=89&type=1&id=701&version=2
-func (p *Product) SearchItem(offset string, pageSize int, itemName string, attributeStatus AttributeStatus,itemSku string) entity.SearchItemResult {
+func (p *Product) SearchItem(offset string, pageSize int, itemName string, attributeStatus AttributeStatus, itemSku string) entity.SearchItemResult {
 	method := "product/search_item"
 	result := entity.SearchItemResult{}
 	params := lib.InRow{
@@ -535,7 +535,7 @@ func (p *Product) SearchItem(offset string, pageSize int, itemName string, attri
 	if attributeStatus > 0 {
 		params["attribute_status"] = attributeStatus
 	}
-	if itemSku!=""{
+	if itemSku != "" {
 		params["item_sku"] = itemSku
 	}
 	err := p.Config.HttpGet(method, params, &result)
@@ -544,7 +544,8 @@ func (p *Product) SearchItem(offset string, pageSize int, itemName string, attri
 	}
 	return result
 }
+
 //GetPartnerID
-func (p *Product)GetPartnerID() int64{
+func (p *Product) GetPartnerID() int64 {
 	return p.Config.PartnerID
 }
