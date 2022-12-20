@@ -75,6 +75,8 @@ github.com/stretchr/testify v1.2.2/go.mod h1:a8OnRcib4nhh0OaRAV+Yts87kKdq0PP7pXf
 github.com/stretchr/testify v1.3.0/go.mod h1:M5WIy9Dh21IEIfnGCwXGc5bZfKNJtfHm1UVUgZn+9EI=
 github.com/stretchr/testify v1.6.1/go.mod h1:6Fq8oRcR53rry900zMqJjRRixrwX3KX962/h/Wwjteg=
 github.com/tidwall/pretty v1.0.0/go.mod h1:XNkn88O1ChpSDQmQeStsy+sBenx6DDtFZJxhVysOjyk=
+github.com/wjp-letgo/letgo v0.0.3 h1:uo2Fr/akuH9b6KdbiKRCnfU3ZYMkzPuIIW6ix3VggsU=
+github.com/wjp-letgo/letgo v0.0.3/go.mod h1:BC/1xaEsPB6GFD7Jb3/zzgP3W7fqbHvXmlz2mP8WKX0=
 github.com/wjp-letgo/letgo v0.0.41 h1:998PFsbajWXAB4vet78EUzBfU8K3jHDExaMZy5S5oTk=
 github.com/wjp-letgo/letgo v0.0.41/go.mod h1:O01iNcdZWlAL08Zv/ptW98jgW3fPMyshxF4TpXitpTY=
 github.com/wjp-letgo/letgo v0.0.44 h1:JFLwvk2oQRDK4dUq26VVB2O38w3/BF5+Lc4AgoiBeaU=
