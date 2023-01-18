@@ -175,6 +175,16 @@ func (p *Product) UpdateItem(item entity.UpdateItemRequestItemEntity) entity.Upd
 	return result
 }
 
+func (p *Product) UpdateItemSku(item entity.UpdateItemRequestItemV2Entity) entity.UpdateItemResult {
+	method := "product/update_item"
+	result := entity.UpdateItemResult{}
+	err := p.Config.HttpPost(method, item, &result)
+	if err != nil {
+		result.Error = err.Error()
+	}
+	return result
+}
+
 //GetModelList
 //@Title Get model list of an item.
 //@Description https://open.shopee.com/documents?module=89&type=1&id=618&version=2

@@ -65,6 +65,7 @@ func (i ItemListEntity) String() string {
 	return lib.ObjectToString(i)
 }
 
+
 //AddItemRequestItemEntity
 type AddItemRequestItemEntity struct {
 	OriginalPrice float32              `json:"original_price"`
@@ -102,6 +103,18 @@ type UpdateItemRequestItemEntity struct {
 func (i UpdateItemRequestItemEntity) String() string {
 	return lib.ObjectToString(i)
 }
+
+//UpdateItemRequestItemV2Entity
+type UpdateItemRequestItemV2Entity struct {
+	ItemSku       string               `json:"item_sku"`
+	ItemId int64 `json:"item_id"`
+}
+
+//String
+func (i UpdateItemRequestItemV2Entity) String() string {
+	return lib.ObjectToString(i)
+}
+
 
 //UnlistItemItemListEntity
 type UnlistItemItemListEntity struct {

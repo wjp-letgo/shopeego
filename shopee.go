@@ -97,6 +97,7 @@ type Shopeer interface {
 	DeleteItem(itemID int64) productEntity.DeleteItemResult
 	AddItem(item productEntity.AddItemRequestItemEntity) productEntity.AddItemResult
 	UpdateItem(item productEntity.UpdateItemRequestItemEntity) productEntity.UpdateItemResult
+	UpdateItemSku(item productEntity.UpdateItemRequestItemV2Entity) productEntity.UpdateItemResult
 	GetModelList(itemID int64) productEntity.GetModelListResult
 	UpdateSizeChart(itemID int64, sizeChart string) productEntity.UpdateSizeChartResult
 	UnlistItem(itemList []productEntity.UnlistItemItemListEntity) productEntity.UnlistItemResult
@@ -119,6 +120,7 @@ type Shopeer interface {
 	GetItemPromotion(itemIdList []int64) productEntity.GetItemPromotionResult
 	UpdateSipItemPrice(itemID int64, sipItemPrice []productEntity.SipItemPriceEntity) productEntity.UpdateSipItemPriceResult
 	SearchItem(offset string, pageSize int, itemName string, attributeStatus product.AttributeStatus, itemSku string) productEntity.SearchItemResult
+	
 	//global_product
 	GetGlobalCategory(language string) globalProductEntity.GetCategoryResult
 	GetGlobalAttributes(language string, categoryID int64) globalProductEntity.GetAttributesResult
