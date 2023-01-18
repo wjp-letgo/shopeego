@@ -77,7 +77,7 @@ type AddItemRequestItemEntity struct {
 	LogisticInfo  []LogisticInfoEntity `json:"logistic_info"`
 	AttributeList []Attributes         `json:"attribute_list"`
 	CategoryID    int64                `json:"category_id"`
-	Image         ImageEntity          `json:"image"`
+	Image         *ImageEntity          `json:"image"`
 	PreOrder      PreOrderEntity       `json:"pre_order"`
 	ItemSku       string               `json:"item_sku"`
 	Condition     string               `json:"condition"`

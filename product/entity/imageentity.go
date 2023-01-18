@@ -11,7 +11,7 @@ type ImageEntity struct {
 }
 
 //String
-func (i ImageEntity) String() string {
+func (i *ImageEntity) String() string {
 	return lib.ObjectToString(i)
 }
 
